@@ -1,8 +1,9 @@
 import java.util.*;
 class Hello{
 	public static void main(String[] args){
-		char[] word = {'H', 'e', 'l', 'l', 'o', ',',
+		Character[] word = {'H', 'e', 'l', 'l', 'o', ',',
 			' ', 'w', 'o', 'r', 'l', 'd', '!'};
-		Arrays.asList(word).forEach(System.out::println);
+		List<Character> chList = Arrays.asList(word);
+		chList.forEach(System.out::println);
 	}
 }
